@@ -1,0 +1,31 @@
+@import '../globals/variables';
+
+// ========================================= Nav ================================= //
+nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: $box-shadow;
+  padding: $gutter;
+
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      a {
+        color: black;
+        padding: $gutter;
+        text-decoration: none;
+        transition: $transition;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        &:hover {
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

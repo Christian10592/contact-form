@@ -1,0 +1,23 @@
+@import 'variables';
+
+// ========================================= Generic Classes ================================= //
+
+//Colors
+.blue {
+  color: $blue !important;
+}
+
+//Pull
+.right {
+  margin-left: auto;
+}
+
+.left {
+  margin-right: auto;
+}
+
+//no gutter
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
