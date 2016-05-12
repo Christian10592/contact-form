@@ -1,0 +1,17 @@
+@import '../globals/variables';
+
+// ========================================= Header ================================= //
+
+header {
+  background-attachment: fixed;
+  background-image: url('../../../assets/images/scrollable-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 596px;
+  margin-top: 76px;
+
+  p {
+    color: white;
+  }
+
+}

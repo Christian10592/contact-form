@@ -8,6 +8,14 @@ nav {
   top: 0;
   box-shadow: $box-shadow;
   padding: $gutter;
+  background: white;
+  z-index: 1000;
+
+  .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
 
   .menu {
     list-style: none;
@@ -26,6 +34,57 @@ nav {
           text-decoration: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  nav {
+    .menu-icon {
+      display: block;
+    }
+    .logo {
+      margin-left: 50px;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+    }
+    .right {
+      background-color: rgba(255, 255, 255, 0.75);
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 75px;
+      width: 100%;
+      z-index: 1000;
+      display: none;
+    }
+    .menu {
+      display: block;
+      background: white none repeat scroll 0 0;
+      height: 100vh;
+      width: 300px;
+      right:300px;
+      box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.14);
+      li {
+        a {
+          font-size: 2em;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  nav.main {
+    a.logo {
+      font-size: 1.25em;
+      margin-left: 15px;
+    }
+    .right {
+      top:60px;
     }
   }
 }

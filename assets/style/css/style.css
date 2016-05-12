@@ -372,7 +372,8 @@ th {
 
 body {
   background: #F2F2F4;
-  padding-bottom: 300px; }
+  padding-bottom: 300px;
+  overflow-x: hidden; }
 
 * {
   position: relative; }
@@ -381,12 +382,6 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
-header {
-  float: left;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  width: 100%; }
 
 .container {
   margin-left: auto;
@@ -412,13 +407,35 @@ header {
   padding-left: 0;
   padding-right: 0; }
 
+.cursive {
+  font-family: Lobster; }
+
+.semi-bold {
+  font-weight: 500; }
+
+header {
+  background-attachment: fixed;
+  background-image: url("../../../assets/images/scrollable-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 596px;
+  margin-top: 76px; }
+  header p {
+    color: white; }
+
 nav {
   width: 100%;
   display: flex;
   position: fixed;
   top: 0;
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.14);
-  padding: 15px; }
+  padding: 15px;
+  background: white;
+  z-index: 1000; }
+  nav .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer; }
   nav .menu {
     list-style: none;
     display: flex;
@@ -434,6 +451,39 @@ nav {
         color: #109F9A;
         text-decoration: none; }
 
+@media (max-width: 991px) {
+  nav .menu-icon {
+    display: block; }
+  nav .logo {
+    margin-left: 50px; }
+  nav .left {
+    display: flex;
+    align-items: center; }
+  nav .right {
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 75px;
+    width: 100%;
+    z-index: 1000;
+    display: none; }
+  nav .menu {
+    display: block;
+    background: white none repeat scroll 0 0;
+    height: 100vh;
+    width: 300px;
+    right: 300px;
+    box-shadow: 0px 7px 6px 3px rgba(0, 0, 0, 0.14); }
+    nav .menu li a {
+      font-size: 2em;
+      line-height: 2; } }
+@media (max-width: 525px) {
+  nav.main a.logo {
+    font-size: 1.25em;
+    margin-left: 15px; }
+  nav.main .right {
+    top: 60px; } }
 .logo {
   color: #222222;
   font-family: Lobster;
