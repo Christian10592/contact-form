@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     //Watch
     watch : {
       sass: {
-        files: ['assets/style/scss/*.scss','assets/style/scss/globals/*.scss','assets/style/scss/components/*.scss', 'assets/style/scss/sections/*.scss'],
+        files: ['assets/style/scss/*.scss','assets/style/scss/globals/*.scss','assets/style/scss/contact-form/*.scss'],
         tasks: ['sass', 'cssmin']
       },
       uglify: {

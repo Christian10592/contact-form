@@ -2,156 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Christian Smitherman</title>
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/style/css/style.min.css" media="screen" title="no title" charset="utf-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="assets/scripts/main.min.js"></script>
+    <title>Contact Form</title>
   </head>
   <body>
-    <nav class='main'>
-      <div class='container flex no-gutter'>
-        <div class='left'>
-          <i id='menu-icon' class="material-icons menu-icon">menu</i>
-          <a href='/' class='logo'>christiansmitherman<span class='blue'>.com</span></a>
-        </div>
-        <div class='right'>
-          <ul class='menu'>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#widgets">Widgets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+    <div class='form-wrapper'>
+      <form id='contact-form' class="contact-form" action="index.html" method="post">
+        <input type='text' name='name' class='input required' placeholder='Name'>
+        <input type='text' name='email' class='input required' placeholder='Email'>
+        <input type='text' name='subject' class='input required' placeholder='Subject'>
+        <textarea name="message" class='input textarea required'></textarea>
+        <button type='submit' class='ghost-button-blue' name='button'>Send</button>
+      </form>
+      <div class='error-message'>
+        <p>One or more of the fields are required!</p>
       </div>
-    </nav>
-    <header id='top'>
-      <div class="container flex">
-        <div class="left">
-          <img class='mobile-image' src="assets/images/about-pic-mobile.png" alt="Picture of Christian Smitherman" />
-          <p class='cursive large-text'>hello</p>
-          <p class='intro-text'>My name is <span class='semi-bold'>Christian</span>,</br> I'm a <span class='semi-bold'>front-end developer</span></p>
-          <a href='#about' class="ghost-button-blue">about.me</a>
-        </div>
-        <div class="right">
-          <img src="assets/images/about-pic-sliced.png" alt="Picture of Christian Smitherman" />
-        </div>
-      </div>
-    </header>
-    <section id='about' class='about'>
-      <div class="container flex">
-        <div class="left">
-          <div class="text-block">
-            <h3 class='blue'>Who I Am?</h3>
-            <p>I’m a creative problem solver employed by Toronto-based design studio, Propeller Studios. I specialize in Front-End Development including HTML, CSS and jQuery—but that doesn’t mean I don’t know my way around the back-end! My knowledge in PhP is enough to get my hands dirty with a fully customized WordPress site.</p>
-          </div>
-        </div>
-        <div class="right">
-          <div class="text-block">
-            <h3 class='blue'>What I Do!</h3>
-            <p>What I enjoy most is taking complex problems and turning them into a clean and effective interface that allows my clients to keep their focus on the things they are truly passionate about. I create fully customized WordPress sites that allow you to easily control your web content. Have a question? I’m always around when you need tech support!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id='portfolio' class='portfolio'>
-      <div class='section-title flex'>
-        <h2 class='cursive'>portfolio</h2>
-      </div>
-      <div class="container no-gutter">
-        <div class="grid-row top">
-          <!-- Start Toni Plus -->
-          <a href="http://toniplus.com/">
-            <div class="long-box grid-item">
-              <i class='fa fa-shopping-bag'></i>
-              <h3 class='company-name'>Toni Plus</h3>
-              <p class='job-description blue'>Ecommerce & Fashion Blog</p>
-            </div>
-          </a>
-          <!-- End Toni Plus -->
-          <!-- Start DARE Magazine -->
-          <a href="http://www.daremag.ca/">
-            <div class="small-box grid-item">
-              <i class='fa fa-female'></i>
-              <h3 class='company-name'>DARE Magazine</h3>
-              <p class='job-description blue'>Digital Fashion Magazine</p>
-            </div>
-          </a>
-          <!-- End DARE Magazine -->
-          <!-- Start Diana Di Poce -->
-          <a href="http://www.dianadipoce.com/">
-            <div class="small-box grid-item">
-              <i class='fa fa-heart'></i>
-              <h3 class='company-name'>Diana Di Poce</h3>
-              <p class='job-description blue'>Art Director Portfolio</p>
-            </div>
-          </a>
-          <!-- End Diana Di Poce -->
-        </div>
-        <div class="grid-row">
-          <!-- Start Propeller -->
-          <a href="http://propellerideas.com/">
-            <div class="tall-box grid-item">
-              <i class='fa fa-plane'></i>
-              <h3 class='company-name'>Propeller</h3>
-              <p class='job-description blue'>Front-end Developer</p>
-            </div>
-          </a>
-          <!-- End Propeller -->
-          <div class="small-grid">
-            <!-- Start Ozawa -->
-            <a href="http://ozawa.ca/">
-              <div class="small-box grid-item">
-                <i class='fa fa-spoon'></i>
-                <h3 class='company-name'>Ozawa</h3>
-                <p class='job-description blue'>Japanese Restaurant Supplier</p>
-              </div>
-            </a>
-            <!-- End Ozawa -->
-            <!-- Start Andrew Jaradine -->
-            <a href="http://jardine.mie.utoronto.ca/">
-              <div class="long-box grid-item">
-                <i class='fa fa-university'></i>
-                <h3 class='company-name'>Andrew Jaradine</h3>
-                <p class='job-description blue'>Univeristy of Toronto</p>
-              </div>
-            </a>
-            <!-- End Jaradine -->
-            <!-- Start Zakuro IT -->
-            <a href="http://zakuroit.com/">
-              <div class="long-box grid-item">
-                <i class='fa fa-desktop'></i>
-                <h3 class='company-name'>Zakuro IT</h3>
-                <p class='job-description blue'>IT Courses</p>
-              </div>
-            </a>
-            <!-- End Zakuro IT -->
-            <!-- Start Ash Kowalewski -->
-            <a href="http://www.ashkowalewski.com/">
-              <div class="small-box grid-item">
-                <i class='fa fa-pencil'></i>
-                <h3 class='company-name'>Ash Kowalewski</h3>
-                <p class='job-description blue'>Writer Portfolio</p>
-              </div>
-            </a>
-            <!-- End Ash Kowalewski -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id='widgets' class='widgets'>
-      <div class='section-title flex'>
-        <h2 class='cursive'>widgets</h2>
-      </div>
-    </section>
-    <section id='contact' class='contact'>
-      <div class='section-title flex'>
-        <h2 class='cursive'>contact</h2>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
