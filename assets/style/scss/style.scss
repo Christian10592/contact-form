@@ -23,8 +23,23 @@
 
 // ========================================= Sections ================================ //
 
+//Import Section
+@import 'sections/section';
+
 //Import Header
 @import 'sections/header';
+
+//Import About
+@import 'sections/about';
+
+//Import Portfolio
+@import 'sections/portfolio';
+
+//Import Widgets
+@import 'sections/widgets';
+
+//Import Contact
+@import 'sections/contact';
 
 // ========================================= Components ============================== //
 
@@ -33,3 +48,6 @@
 
 //Import Logo
 @import 'components/logo';
+
+//Import Buttons
+@import 'components/buttons';

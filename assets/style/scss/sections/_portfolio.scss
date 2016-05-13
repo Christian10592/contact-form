@@ -1,0 +1,67 @@
+@import '../globals/variables';
+
+// ========================================= Portfolio ================================= //
+
+.grid-item {
+  background: #e3e1e1;
+  float: left;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 100%;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+  i {
+    color:$black;
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.75em;
+    font-weight: $font-light;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color:$black;
+  }
+  p {
+    color: $blue;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.small-grid {
+  float: left;
+  div {
+    margin-right: 15px;
+  }
+}
+
+.grid-row {
+  width: 100%;
+  float: left;
+  &.top {
+    margin-bottom: 15px;
+    .small-box {
+      margin-left: 15px;
+    }
+  }
+}
+
+.long-box {
+  height: 250px;
+  width: 570px;
+}
+
+.tall-box {
+  height: 515px;
+  width: 380px;
+}
+
+.small-box {
+  width:285px;
+  height: 250px;
+}

@@ -28,5 +28,16 @@
 }
 
 .semi-bold {
-  font-weight: 500;
+  font-weight: 500 !important;
+}
+
+//images
+.mobile-image {
+  display: none;
+}
+
+//flex
+.flex {
+  display: flex;
+  align-items: center;
 }

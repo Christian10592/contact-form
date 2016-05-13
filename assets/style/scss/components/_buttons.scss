@@ -1,0 +1,25 @@
+@import '../globals/variables';
+
+// ========================================= Buttons ================================= //
+
+.ghost-button-blue {
+  background: white none repeat scroll 0 0;
+  border: 2px solid $blue;
+  color: $blue;
+  display: block;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  max-width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.35s ease 0s;
+  width: 170px;
+  &:hover {
+    background: $blue;
+    color:white;
+  }
+}

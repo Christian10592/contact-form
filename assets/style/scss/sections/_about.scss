@@ -1,0 +1,29 @@
+@import '../globals/variables';
+
+// ========================================= About ================================= //
+
+.about {
+  .text-block {
+    h3 {
+      font-size: 1.75em;
+      font-weight: $font-normal;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.2em;
+      font-weight: $font-normal;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .about {
+    .container {
+      display: block;
+      .text-block {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

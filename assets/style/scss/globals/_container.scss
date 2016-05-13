@@ -9,9 +9,10 @@
   padding-left: $gutter;
   padding-right: $gutter;
   width: 1170px;
-
-  &.flex {
-    display: flex;
-    align-items: center;
+  clear: both;
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
   }
 }
