@@ -18,36 +18,7 @@
 //Import Container
 @import 'globals/container';
 
-//Import Generic Classes
-@import 'globals/generic-classes';
 
-// ========================================= Sections ================================ //
-
-//Import Section
-@import 'sections/section';
-
-//Import Header
-@import 'sections/header';
-
-//Import About
-@import 'sections/about';
-
-//Import Portfolio
-@import 'sections/portfolio';
-
-//Import Widgets
-@import 'sections/widgets';
-
-//Import Contact
-@import 'sections/contact';
-
-// ========================================= Components ============================== //
-
-//Import Nav
-@import 'components/nav';
-
-//Import Logo
-@import 'components/logo';
-
-//Import Buttons
-@import 'components/buttons';
+// ========================================= Contact Form ============================ //
+//Import Contact Form
+@import 'contact-form/contact-form';
