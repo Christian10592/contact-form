@@ -453,4 +453,21 @@ body {
     padding-bottom: 10px;
     text-transform: uppercase; }
 
+.message-sent {
+  background: #109F9A;
+  color: white;
+  margin-top: 35px;
+  padding: 50px;
+  text-align: center;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto; }
+  .message-sent .cursive {
+    font-family: Lobster;
+    font-size: 3em;
+    margin-bottom: 15px; }
+  .message-sent .note {
+    font-size: 1.25em;
+    font-weight: 400; }
+
 /*# sourceMappingURL=style.css.map */

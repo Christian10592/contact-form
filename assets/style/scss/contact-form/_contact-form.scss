@@ -54,7 +54,7 @@
 }
 
 :-ms-input-placeholder {
-   color: $black !important;  
+   color: $black !important;
 }
 
 .error-message {
@@ -70,4 +70,27 @@
     padding-bottom: 10px;
     text-transform: uppercase;
   }
+}
+
+.message-sent {
+  background: $blue;
+  color: white;
+  margin-top: 35px;
+  padding: 50px;
+  text-align: center;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+
+  .cursive {
+    font-family: $secondary-font;
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+
+  .note {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+
 }
