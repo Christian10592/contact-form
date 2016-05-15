@@ -22,6 +22,18 @@
       margin-bottom: 30px;
       height: 40px;
       padding-bottom: 10px;
+      &.error, &.email-error {
+        border-bottom: 2px solid $red;
+        color: $red;
+        font-weight: 700;
+      }
+    }
+    textarea {
+      transition: .25s;
+      &.grow {
+        height: auto !important;
+        overflow: auto;
+      }
     }
     button {
       background: white;
@@ -81,6 +93,20 @@
   width: 700px;
   margin-right: auto;
   margin-left: auto;
+  display: none;
+
+  i {
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 22px;
+    height: 40px;
+    padding-top: 7px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    cursor: pointer;
+  }
 
   .cursive {
     font-family: $secondary-font;
@@ -92,5 +118,4 @@
     font-size: 1.25em;
     font-weight: 400;
   }
-
 }

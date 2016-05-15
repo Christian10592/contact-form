@@ -415,6 +415,15 @@ body {
     margin-bottom: 30px;
     height: 40px;
     padding-bottom: 10px; }
+    .form-wrapper .contact-form .input.error, .form-wrapper .contact-form .input.email-error {
+      border-bottom: 2px solid #F34A44;
+      color: #F34A44;
+      font-weight: 700; }
+  .form-wrapper .contact-form textarea {
+    transition: .25s; }
+    .form-wrapper .contact-form textarea.grow {
+      height: auto !important;
+      overflow: auto; }
   .form-wrapper .contact-form button {
     background: white;
     border: 2px solid #109F9A;
@@ -461,7 +470,19 @@ body {
   text-align: center;
   width: 700px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  display: none; }
+  .message-sent i {
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 22px;
+    height: 40px;
+    padding-top: 7px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    cursor: pointer; }
   .message-sent .cursive {
     font-family: Lobster;
     font-size: 3em;
