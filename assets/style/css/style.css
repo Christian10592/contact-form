@@ -396,14 +396,27 @@ body {
     content: "";
     display: block; }
 
+.form-wrapper .form-header {
+  background: #109F9A;
+  color: #fff;
+  font-family: lobster;
+  font-size: 2em;
+  font-weight: 700;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: lowercase;
+  top: 0;
+  width: 100%; }
 .form-wrapper .contact-form {
   width: 700px;
-  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  padding: 35px;
+  padding: 110px 35px 50px;
   max-width: 100%; }
   .form-wrapper .contact-form .input {
     border: none;

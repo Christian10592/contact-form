@@ -3,6 +3,20 @@
 // ========================================= Contact Form ================================= //
 
 .form-wrapper {
+  .form-header {
+    background: $blue;
+    color: #fff;
+    font-family: lobster;
+    font-size: 2em;
+    font-weight: 700;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    text-transform: lowercase;
+    top: 0;
+    width: 100%;
+  }
   .contact-form {
     width: 700px;
     box-shadow: $box-shadow;
@@ -10,7 +24,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    padding: 35px;
+    padding: 110px 35px 50px;
     max-width: 100%;
     .input {
       border: none;

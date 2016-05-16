@@ -4,12 +4,13 @@ $(document).ready(function(){
   var contactButtonSelector = $('#contact-form button');
   var messageSent           = $('.message-sent');
   var closeMessageSent      = messageSent.find('i');
-
   //========== Inputs ==========//
   var contactFormInput    = $('#contact-form .input');
   var contactFormMessage  = $('#contact-form .message');
   var inputError          = $('.error');
   var emailError          = $('.email-error');
+
+
 
   //==================== Contact Form ===========//
 
