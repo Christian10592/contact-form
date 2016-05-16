@@ -8,12 +8,12 @@ $(document).ready(function(){
   //========== Inputs ==========//
   var contactFormInput    = $('#contact-form .input');
   var contactFormMessage  = $('#contact-form .message');
+  var inputError          = $('.error');
+  var emailError          = $('.email-error');
 
   //==================== Contact Form ===========//
 
   //TODO:
-    //Better error messages
-    //Message grows with typing
     //documentation
     //clean up
     //submit focus input with error
@@ -40,7 +40,7 @@ $(document).ready(function(){
   }
 
   function validateForm(inputValue, selector) {
-    var errorMessage = 'This input is required';
+    var errorMessage = selector.attr('name') + ' is required';
     if (
         (inputValue != 'Name') &&
         (inputValue != 'Email') &&
@@ -62,6 +62,11 @@ $(document).ready(function(){
       validateEmail(inputValue, selector);
     }
     validateForm(inputValue, selector);
+    if ($(this.hasClass('message'))) {
+      if ($(this).val()) {
+        $(this).removeClass('grow');
+      }
+    }
   });
 
   contactFormInput.focus(function(){
@@ -88,8 +93,13 @@ $(document).ready(function(){
   contactButtonSelector.click(function(e){
     var checkInputError = contactFormInput.hasClass('error');
     var checkEmailError = contactFormInput.hasClass('email-error');
-    if (checkInputError || checkEmailError) {
-      checkInput.focus();
+    if (checkInputError) {
+      alert('has error input');
+      inputError.focus();
+      e.preventDefault();
+    } else if (checkEmailError) {
+      emailError.focus();
+      alert('has error email');
       e.preventDefault();
     } else {
       contactFormSelector.fadeOut('fast');

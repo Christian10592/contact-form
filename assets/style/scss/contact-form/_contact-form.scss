@@ -26,13 +26,14 @@
         border-bottom: 2px solid $red;
         color: $red;
         font-weight: 700;
+        height: 40px !important;
+        text-transform: capitalize;
       }
     }
     textarea {
       transition: .25s;
       &.grow {
-        height: auto !important;
-        overflow: auto;
+        height: 400px !important;
       }
     }
     button {

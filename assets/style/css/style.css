@@ -418,12 +418,13 @@ body {
     .form-wrapper .contact-form .input.error, .form-wrapper .contact-form .input.email-error {
       border-bottom: 2px solid #F34A44;
       color: #F34A44;
-      font-weight: 700; }
+      font-weight: 700;
+      height: 40px !important;
+      text-transform: capitalize; }
   .form-wrapper .contact-form textarea {
     transition: .25s; }
     .form-wrapper .contact-form textarea.grow {
-      height: auto !important;
-      overflow: auto; }
+      height: 400px !important; }
   .form-wrapper .contact-form button {
     background: white;
     border: 2px solid #109F9A;
