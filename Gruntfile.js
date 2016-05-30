@@ -9,11 +9,11 @@ module.exports = function(grunt) {
     //Watch
     watch : {
       sass: {
-        files: ['assets/style/scss/*.scss','assets/style/scss/globals/*.scss','assets/style/scss/contact-form/*.scss'],
+        files: ['public/assets/style/scss/*.scss','public/assets/style/scss/globals/*.scss','public/assets/style/scss/components/*.scss'],
         tasks: ['sass', 'cssmin']
       },
       uglify: {
-        files: ['assets/scripts/main.js'],
+        files: ['public/assets/scripts/main.js'],
         tasks: ['uglify']
       }
     },
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'assets/style/css/style.css': 'assets/style/scss/style.scss'
+          'public/assets/style/css/style.css': 'public/assets/style/scss/style.scss'
         }
       }
     },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'assets/scripts/main.min.js': ['assets/scripts/main.js']
+          'public/assets/scripts/main.min.js': ['public/assets/scripts/main.js']
         }
       }
     },
@@ -41,9 +41,9 @@ module.exports = function(grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'assets/style/css',
+          cwd: 'public/assets/style/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'assets/style/css',
+          dest: 'public/assets/style/css',
           ext: '.min.css'
         }]
       }

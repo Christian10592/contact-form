@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  section
+    div.container.form-wrapper
+      form#contact-form.form.contact(onsubmit='return false;')
+        div.header Get in touch
+        div.input-wrapper
+          label Name:
+          input.input.required(type='text' name='name' value='')
+          div.input-underline
+        div.input-wrapper
+          label Email:
+          input.input.required(type='text' name='email' value='')
+          div.input-underline
+        div.input-wrapper
+          label Subject:
+          input.input.required(type='text' name='subject' value='')
+          div.input-underline
+        div.input-wrapper
+          label Message:
+          textarea.input.textarea.required(name='message' value='')
+          div.input-underline.textarea
+        button.button.blue(type='submit' name='submit') Send
+  div#message-sent.notification.flex
+    div.left
+      i.material-icons face
+    div.right
+      p.name Christian Smitherman
+      p.message Thanks for the email, I'll get back to you soon!
+      p.date 3:00PM

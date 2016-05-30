@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Dosis:700,500,300,200);
 html {
   font-family: sans-serif;
@@ -360,7 +359,7 @@ th {
 
 * {
   font-family: Dosis;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -371,8 +370,7 @@ th {
   background-repeat: no-repeat; }
 
 body {
-  background: #F2F2F4;
-  padding-bottom: 300px;
+  background: white;
   overflow-x: hidden; }
 
 * {
@@ -383,6 +381,33 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
+a:focus {
+  outline: none !important; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -390,26 +415,159 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1170px;
-  clear: both; }
+  clear: both;
+  margin-bottom: 75px;
+  margin-top: 75px; }
   .container:after {
     clear: both;
     content: "";
     display: block; }
 
-.form-wrapper .form-header {
+.full-width {
+  width: 100%; }
+
+.blue {
+  color: #109F9A !important; }
+
+.right {
+  margin-left: auto; }
+
+.left {
+  margin-right: auto; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0; }
+
+.semi-bold {
+  font-weight: 500 !important; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+.row {
+  float: left;
+  clear: both;
+  width: 100%; }
+
+.hide {
+  display: none; }
+
+label {
+  font-weight: 700;
+  color: #455960;
+  position: absolute;
+  top: 5px;
+  transition: .15s; }
+  label.error {
+    color: #E91E63; }
+
+.button {
+  background-color: #fff;
+  border-radius: 2px;
+  color: #555555;
+  display: block;
+  font-size: 0.9em;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  width: 120px;
+  transition: 0.35s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border: none; }
+  .button:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
+  .button:focus, .button:active {
+    outline: none !important; }
+  .button.blue {
+    background: #109F9A;
+    color: white !important; }
+
+.input {
+  border: none;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #455960;
+  background: none;
+  width: 100%;
+  resize: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 45px;
+  height: 40px;
+  padding-bottom: 10px;
+  color: #455960;
+  transition: 0.35s; }
+  .input:focus {
+    outline: none !important; }
+    .input:focus:first-of-type + .input-underline {
+      width: 100%; }
+
+textarea {
+  transition: 0.35s;
+  padding-top: 15px !important;
+  overflow: hidden; }
+  textarea.grow {
+    height: 400px !important; }
+
+.input-wrapper {
+  position: relative; }
+
+.input-underline {
+  content: "";
+  display: block;
+  background: #455960;
+  transition: width 0.35s;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  bottom: 45px; }
+  .input-underline.error {
+    background: #E91E63;
+    width: 100%; }
+
+::-webkit-input-placeholder {
+  color: #455960 !important; }
+
+:-moz-placeholder {
+  color: #455960 !important;
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: #455960 !important;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #455960 !important; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .input-underline.textarea {
+    bottom: 48px !important; } }
+.form .header {
   background: #109F9A;
   color: #fff;
-  font-family: lobster;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 500;
   left: 0;
-  padding: 20px;
+  padding: 15px 30px;
   position: absolute;
-  text-align: center;
-  text-transform: lowercase;
+  text-transform: uppercase;
   top: 0;
   width: 100%; }
-.form-wrapper .contact-form {
+.form.contact {
   width: 700px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: white;
@@ -418,92 +576,35 @@ body {
   margin-top: 50px;
   padding: 110px 35px 50px;
   max-width: 100%; }
-  .form-wrapper .contact-form .input {
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
-    background: none;
-    width: 100%;
-    resize: none;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: 30px;
-    height: 40px;
-    padding-bottom: 10px; }
-    .form-wrapper .contact-form .input.error, .form-wrapper .contact-form .input.email-error {
-      border-bottom: 2px solid #F34A44;
-      color: #F34A44;
-      font-weight: 700;
-      height: 40px !important;
-      text-transform: capitalize; }
-  .form-wrapper .contact-form textarea {
-    transition: .25s; }
-    .form-wrapper .contact-form textarea.grow {
-      height: 400px !important; }
-  .form-wrapper .contact-form button {
-    background: white;
-    border: 2px solid #109F9A;
-    color: #109F9A;
-    font-weight: 500;
-    padding: 10px 50px;
-    transition: .25s; }
-    .form-wrapper .contact-form button:hover {
-      background: #109F9A;
-      color: white; }
 
-::-webkit-input-placeholder {
-  color: #222222 !important; }
-
-:-moz-placeholder {
-  color: #222222 !important;
-  opacity: 1; }
-
-::-moz-placeholder {
-  color: #222222 !important;
-  opacity: 1; }
-
-:-ms-input-placeholder {
-  color: #222222 !important; }
-
-.error-message {
-  border-bottom: 2px solid #F34A44;
-  color: #F34A44;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px; }
-  .error-message p {
-    font-size: 1.15em;
-    font-weight: 700;
-    margin-top: 15px;
-    padding-bottom: 10px;
-    text-transform: uppercase; }
-
-.message-sent {
-  background: #109F9A;
-  color: white;
-  margin-top: 35px;
-  padding: 50px;
-  text-align: center;
-  width: 700px;
-  margin-right: auto;
-  margin-left: auto;
-  display: none; }
-  .message-sent i {
-    border: 2px solid white;
-    border-radius: 40px;
-    font-size: 22px;
-    height: 40px;
-    padding-top: 7px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 40px;
-    cursor: pointer; }
-  .message-sent .cursive {
-    font-family: Lobster;
-    font-size: 3em;
-    margin-bottom: 15px; }
-  .message-sent .note {
-    font-size: 1.25em;
-    font-weight: 400; }
+.notification {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  top: 15px;
+  right: -400px;
+  padding: 10px;
+  z-index: 5000;
+  border-radius: 2px;
+  transition: 0.35s; }
+  .notification .left img {
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #109F9A; }
+  .notification .right {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .notification .right .name {
+      font-weight: 500;
+      color: #222222; }
+    .notification .right .message {
+      color: #555555; }
+    .notification .right .date {
+      font-size: 0.85em;
+      font-weight: 500;
+      position: absolute;
+      right: 15px;
+      top: 3px;
+      color: #333; }
 
 /*# sourceMappingURL=style.css.map */
